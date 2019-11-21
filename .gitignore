@@ -1,0 +1,10 @@
+node_modules
+
+dist/main.js
+
+db.json
+
+package-lock.json
+
+
+.DS_Store
