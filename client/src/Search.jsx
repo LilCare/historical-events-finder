@@ -13,7 +13,7 @@ function Search({ searchState, setSearch, setResults, setPageCountState }) {
         const lastPageNumber = parseInt(linksSplit[3][0], 10);
         setPageCountState(lastPageNumber);
       })
-      .catch((err)=> console.log(err));
+      .catch((err)=> console.log(err)); // eslint-disable-line
   }
 
   return (
@@ -27,7 +27,10 @@ function Search({ searchState, setSearch, setResults, setPageCountState }) {
           onChange={(e) => { setSearch(e.target.value); }}
         />
       </label>
-      <input type="submit" value="Submit" />
+      <input
+        type="submit"
+        value="Submit"
+      />
     </form>
   );
 }

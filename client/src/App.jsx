@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Search from './Search';
 import Paginate from './Paginate';
+import Results from './Results';
 
 function App() {
   const [searchState, setSearch] = useState('');
@@ -22,6 +23,9 @@ function App() {
         pageCountState={pageCountState}
         setResults={setResults}
         searchState={searchState}
+      />
+      <Results
+        resultsState={resultsState}
       />
     </div>
   );

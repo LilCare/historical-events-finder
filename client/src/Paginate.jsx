@@ -13,7 +13,7 @@ function Paginate({ pageCountState, setResults, searchState }) {
       .then((results) => {
         setResults(results.data);
       })
-      .catch((err)=> console.log(err));
+      .catch((err)=> console.log(err)); // eslint-disable-line
   }
 
   return (
