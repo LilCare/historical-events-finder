@@ -20,6 +20,8 @@ function App() {
       />
       <Paginate
         pageCountState={pageCountState}
+        setResults={setResults}
+        searchState={searchState}
       />
     </div>
   );
